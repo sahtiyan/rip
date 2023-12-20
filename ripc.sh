@@ -6,5 +6,5 @@ if [ $# -lt 1 ]; then
     exit 1
 fi
 
-# Command to run the Rust executable with the provided argument and version flag
-cargo run -- $1 --version
+# Command to run the Rust executable with the provided argument
+cargo run -- "$@"
