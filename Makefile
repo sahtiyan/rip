@@ -10,5 +10,6 @@ clean:
 
 # Install Rip compiler
 install:
-	sudo cp ripc.sh /usr/bin/ripc
-	sudo chmod +x /usr/bin/ripc
+	sudo mkdir -p /usr/bin/rip
+	sudo cp -r * /usr/bin/rip
+	sudo chmod +x /usr/bin/rip/ripc.sh
