@@ -6,5 +6,8 @@ if [ $# -lt 1 ]; then
     exit 1
 fi
 
-# Command to run the Rust executable with the provided argument
-cargo run -- "$@"
+# Rip Compiler'ın bulunduğu yol
+RIP_COMPILER_DIR="/usr/bin/rip"
+
+# Command to run the Rip Compiler executable with the provided argument
+$RIP_COMPILER_DIR/ripc "$@"
