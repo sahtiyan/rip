@@ -37,6 +37,11 @@ impl<'a> Lexer<'a> {
                     return Token::Space;
                 }
                 _ => {
+                    // Yorum satırı olarak işaretlenen eğik çizgi (/) karakterini tanıma
+                    if ch == '/' {
+                        self.advance();
+                        continue;
+                    }
                     self.advance();
                 }
             }
