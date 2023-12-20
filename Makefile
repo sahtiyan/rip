@@ -10,5 +10,5 @@ clean:
 
 # Install Rip compiler
 install:
-	cp ripc.sh /usr/bin/ripc
-	chmod +x /usr/bin/ripc
+	sudo cp ripc.sh /usr/bin/ripc
+	sudo chmod +x /usr/bin/ripc
