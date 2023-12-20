@@ -6,8 +6,4 @@ if [ $# -lt 1 ]; then
     exit 1
 fi
 
-# Rip Compiler'ın bulunduğu yol
-RIP_COMPILER_DIR="/usr/bin/rip"
-
-# Command to run the Rip Compiler executable with the provided argument
-$RIP_COMPILER_DIR/ripc "$@"
+cargo run -- $1
