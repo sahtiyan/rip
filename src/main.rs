@@ -4,6 +4,7 @@ mod compiler;
 
 use std::env;
 use std::fs;
+use compiler::Compiler;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -23,9 +24,8 @@ fn main() {
         }
     };
 
-    let compiler = compiler::Compiler::new("1.0.0"); // Sürümü burada belirtiyorum
+    let compiler = Compiler::new("1.0.0"); // Sürümü burada belirtiyorum
     let result = compiler.compile_file(&source_code);
 
     println!("Compiler result: {}", result);
-    compiler.version(); // Sürümü yazdırıyorum
 }
