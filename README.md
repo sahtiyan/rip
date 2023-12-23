@@ -24,7 +24,7 @@ ripc your_file.rip
 
 ## Contributing
 
-Feel free to contribute to Rip by opening issues or pull requests on [GitHub](https://github.com/sahtiyan/rip.git).
+Feel free to contribute to Rip by opening issues or pull requests on [GitHub](https://github.com/sahtiyan/rip).
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
